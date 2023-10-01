@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/css/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css">
+      
+      <title>Responsive dropdown menu - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                 <img src="./image/logo.png" alt="">
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Trang Chủ</a></li>
+
+                  <li><a href="#" class="nav__link">Giới Thiệu</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Sản Phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Giày Thể Thao
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              Giày Thể Thao
+                           </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                             Giày Thương Hiệu
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="#" class="nav__link">Giỏ Hàng</a></li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Tài Khoản 
+                     </div>
+
+                     <!-- <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-user-line"></i> Profiles
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Accounts
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Messages
+                           </a>
+                        </li>
+                     </ul> -->
+                  </li>
+
+                  <li><a href="#" class="nav__link">Contact</a></li>
+                  <li><a href="#" class="nav__link" onclick="showSearchPopup()"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+               </ul>
+                 <!-- Popup Tìm kiếm -->
+                  <div class="search-popup" id="searchPopup">
+                     <div class="search-form">
+                        <button onclick="closeSearchPopup()">X</button>
+                        <input type="text" class="search-input" placeholder="Bạn tìm kiếm gì cho hôm nay nào !">
+                        
+                     </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section class="home">
+            <div class="home_container container">
+               <div class="home_data">
+                  <h2 class="home_subtitle">
+                     NIKE
+                  </h2>
+                  <h1 class="home_title">
+                     LUPINEK<br>
+                     FLYKNIT<br>
+                     ACG
+                  </h1>
+                  <p class="home_description">Nike is a renowned sportswear company known for its innovative athletic footwear and apparel.</p>
+                  <a href="#" class="home_button">BUY NOW</a>
+               </div>
+               <div class="home_images">
+                  <div class="home_circle"></div>
+                  <div class="home_swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home_article swiper-slide">
+                           <img src="./image/home_img1.png" alt="" class="home_shoe">
+                        </article>
+                        <article class="home_article swiper-slide">
+                           <img src="./image/home_img2.png" alt="" class="home_shoe">
+                        </article>
+                        <article class="home_article swiper-slide">
+                           <img src="./image/home_img3.png" alt="" class="home_shoe">
+                        </article>
+                        
+                     </div>
+                  </div>
+
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--=============== MAIN JS ===============-->
+      <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+   </body>
+</html>
