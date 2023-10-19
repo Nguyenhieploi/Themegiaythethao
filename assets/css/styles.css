@@ -305,7 +305,7 @@ a {
   display: grid;
   row-gap: 20px;
   padding-block: 8rem 4rem;
-  height: 100vh;
+ 
   grid-template-columns: 1fr 1fr;
     place-items: center;
     column-gap: 2rem;
@@ -467,37 +467,22 @@ a {
 .banner_box .banner_item:nth-child(5){
   grid-area: h5;
 }
-.banner_box .banner_img .img-first{
+.banner_box  .img-first{
   height: 100% !important;
 }
 .banner_box img{
   width: 100%;
   object-fit: cover;
   flex-shrink: 0;
-  height: 200px;
+  height: 385px;
 }
-
+.banner_box .item-1{
+  height: 100%  !important;
+}
 .banner_box .box_item{
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.banner_box .banner_content a {
-  color: #fff;
-  font-weight: 700; /* Màu chữ */
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  width: 200px;
-  background: linear-gradient(90deg, #ff5733, #000000);
-    background-size: 200% 100%;
-    background-position: -100% 0;
-    transition: background-position 0.7s ease;
-    width: 16%;
- 
-}
-.banner_box .banner_content a:hover{
-  background-position: 100% 0;
 }
 .banner-v2{
   margin-top: 100px !important;
@@ -609,19 +594,7 @@ a {
   z-index: 999;
 }
 
-.main-popup {
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  width: 70%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Đưa popup về giữa màn hình */
-  transition: all .5s;
-  text-align: center; /* Căn giữa nội dung trong popup */
-}
+
 .popup #close-popup{
   position: absolute;
   top: 0;
@@ -725,6 +698,7 @@ a {
   flex-wrap:wrap;
   column-gap: 10px;
 }
+
 .contact-product .add-to-cart a{
   background-color: #252422;
     padding: 12px 20px;
@@ -885,13 +859,15 @@ a {
   text-decoration: auto;
 }
 /* ======== Footer */
+footer{
+  background: #c6c6c6;
+}
 .top-footer{
   margin-top: 100px !important;
-  background: #c6c6c6;
   padding: 50px 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 .contact-main, .contact-more-main{
@@ -938,14 +914,7 @@ a {
 }
 
 /***************  MOBILE ***************/
-@media only screen and (max-width: 48em) {
-  .phonenz {
-    top: 50px;
-  }
-  .menunz {
-    top: 100px;
-  }
-}
+
 
 .rmenunz2:after {
   position: absolute;
@@ -975,7 +944,7 @@ a {
   display: flex;
   gap: 10px;
   transition: all .5s;
-  flex-wrap: wrap;
+ 
 }
 .cat-thuonghieu-item:hover img{
   opacity: 0.8;
@@ -985,7 +954,7 @@ a {
   display: flex;
   gap: 10px;
   margin-top: 5px;
-  flex-wrap: wrap;
+  
 }
 
 
@@ -1003,7 +972,23 @@ a {
     padding-inline: 1rem;
   }
 }
-
+@media screen and (max-width: 550px){
+  .home_images img {
+    width: 100% !important;
+  }
+  .banner_box img{
+    height: 300px !important;
+  }
+  .top-footer{
+    display: grid;
+  }
+ 
+  .home_circle{
+    background:none;
+  }
+  
+  
+}
 /* For large devices */
 @media screen and (min-width: 767px) {
   .container {
@@ -1085,11 +1070,14 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
+  .home_container{
+    height: 60vh;
+  }
 }
 @media screen and (max-width: 767px) {
   .home .home_container{
-    grid-template-columns: auto !important;
-    margin-bottom: 50px;
+    grid-template-columns: 1fr;
+   
   }
   .box-cat{
     grid-template-columns: auto !important;
@@ -1105,7 +1093,10 @@ a {
         "h5";
   }
   .banner_box img{
-    height: 100%;
+    height: 500px;
+  }
+  .banner_box .img-first{
+    height: 500px  !important;
   }
   .swiper{
     width: 100%;
@@ -1131,12 +1122,15 @@ a {
   .product-media .swiper-slide img {
     height: 200px;
   }
-}
-@media screen and (max-width: 550px){
-  .home_images img {
-    width: 100%;
+  .product-media .mySwiper{
+    display: none;
   }
+  .cat-thuonghieu-box--1, .cat-thuonghieu-box--2{
+    display: grid;
+  }
+ 
 }
+
 @media screen and (max-width: 1080px){
   .product-popup{
     grid-template-columns:1fr;
@@ -1147,5 +1141,10 @@ a {
   }
   .product-popup .add-to-cart{
     width: 100%;
+  }
+}
+@media screen and (max-width: 820px){
+  .banner_box img{
+    height: 265px;
   }
 }
