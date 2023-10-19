@@ -1,78 +1,86 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/styles.css">
-      
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./assets/css/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css">
-      
-      <title>Responsive dropdown menu - Bedimcode</title>
-   </head>
-   <body>
-      <!--=============== HEADER ===============-->
-      <header class="header">
-         <nav class="nav container">
-            <div class="nav__data">
-               <a href="#" class="nav__logo">
-                 <img src="./image/logo.png" alt="">
-               </a>
-               
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line nav__burger"></i>
-                  <i class="ri-close-line nav__close"></i>
-               </div>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css">
+
+   <title>Sneaker Shop</title>
+</head>
+
+<body>
+   <!--=============== HEADER ===============-->
+   <header class="header">
+      <nav class="nav container">
+         <div class="nav__data">
+            <a href="#" class="nav__logo">
+               <img src="./image/logo.png" alt="">
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
             </div>
+         </div>
 
-            <!--=============== NAV MENU ===============-->
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Trang Chủ</a></li>
+         <!--=============== NAV MENU ===============-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#" class="nav__link">Trang Chủ</a></li>
 
-                  <li><a href="#" class="nav__link">Giới Thiệu</a></li>
+               <li><a href="#" class="nav__link">Giới Thiệu</a></li>
 
-                  <!--=============== DROPDOWN 1 ===============-->
-                  <li class="dropdown__item">
-                     <div class="nav__link">
-                        Sản Phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
+               <!--=============== DROPDOWN 1 ===============-->
+               <li class="dropdown__item">
+                  <div class="nav__link">
+                     Sản Phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
 
-                     <ul class="dropdown__menu">
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              Giày Thể Thao
-                           </a>                          
-                        </li>
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           Giày Thể Thao
+                        </a>
+                     </li>
 
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              Giày Thể Thao
-                           </a>
-                        </li>
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           Giày Nam
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           Giày Nữ
+                        </a>
+                     </li>
 
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                           <div class="dropdown__link">
-                             Giày Thương Hiệu
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  
-                  <li><a href="#" class="nav__link">Giỏ Hàng</a></li>
+                     <!--=============== DROPDOWN SUBMENU ===============-->
+                     <li class="dropdown__subitem">
+                        <div class="dropdown__link">
+                           Giày Thương Hiệu
+                        </div>
+                     </li>
+                  </ul>
+               </li>
 
-                  <!--=============== DROPDOWN 2 ===============-->
-                  <li class="dropdown__item">
-                     <div class="nav__link">
-                        Tài Khoản 
-                     </div>
+               <li><a href="#" class="nav__link">Giỏ Hàng</a></li>
 
-                     <!-- <ul class="dropdown__menu">
+               <!--=============== DROPDOWN 2 ===============-->
+               <li class="dropdown__item">
+                  <div class="nav__link">
+                     Tài Khoản
+                  </div>
+
+                  <!-- <ul class="dropdown__menu">
                         <li>
                            <a href="#" class="dropdown__link">
                               <i class="ri-user-line"></i> Profiles
@@ -91,63 +99,424 @@
                            </a>
                         </li>
                      </ul> -->
-                  </li>
+               </li>
 
-                  <li><a href="#" class="nav__link">Contact</a></li>
-                  <li><a href="#" class="nav__link" onclick="showSearchPopup()"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-               </ul>
-                 <!-- Popup Tìm kiếm -->
-                  <div class="search-popup" id="searchPopup">
-                     <div class="search-form">
-                        <button onclick="closeSearchPopup()">X</button>
-                        <input type="text" class="search-input" placeholder="Bạn tìm kiếm gì cho hôm nay nào !">
-                        
-                     </div>
+               <li><a href="#" class="nav__link">Contact</a></li>
+               <li><a href="#" class="nav__link" onclick="showSearchPopup()"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+            <!-- Popup Tìm kiếm -->
+            <div class="search-popup" id="searchPopup">
+               <div class="search-form">
+                  <button onclick="closeSearchPopup()">X</button>
+                  <input type="text" class="search-input" placeholder="Bạn tìm kiếm gì cho hôm nay nào !">
+
                </div>
             </div>
-         </nav>
-      </header>
-      <main>
-         <section class="home">
-            <div class="home_container container">
-               <div class="home_data">
-                  <h2 class="home_subtitle">
-                     NIKE
-                  </h2>
-                  <h1 class="home_title">
-                     LUPINEK<br>
-                     FLYKNIT<br>
-                     ACG
-                  </h1>
-                  <p class="home_description">Nike is a renowned sportswear company known for its innovative athletic footwear and apparel.</p>
-                  <a href="#" class="home_button">BUY NOW</a>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="home">
+         <div class="home_container container">
+            <div class="home_data">
+               <h2 class="home_subtitle">
+                  NIKE
+               </h2>
+               <h1 class="home_title">
+                  LUPINEK<br>
+                  FLYKNIT<br>
+                  ACG
+               </h1>
+               <p class="home_description">Nike is a renowned sportswear company known for its innovative athletic
+                  footwear and apparel.</p>
+               <a href="#" class="home_button">BUY NOW</a>
+            </div>
+            <div class="home_images">
+               <div class="home_circle"></div>
+               <div class="home_swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="home_article swiper-slide">
+                        <img src="./image/home_img1.png" alt="" class="home_shoe">
+                     </article>
+                     <article class="home_article swiper-slide">
+                        <img src="./image/home_img2.png" alt="" class="home_shoe">
+                     </article>
+                     <article class="home_article swiper-slide">
+                        <img src="./image/home_img3.png" alt="" class="home_shoe">
+                     </article>
+
+                  </div>
                </div>
-               <div class="home_images">
-                  <div class="home_circle"></div>
-                  <div class="home_swiper swiper">
-                     <div class="swiper-wrapper">
-                        <article class="home_article swiper-slide">
-                           <img src="./image/home_img1.png" alt="" class="home_shoe">
-                        </article>
-                        <article class="home_article swiper-slide">
-                           <img src="./image/home_img2.png" alt="" class="home_shoe">
-                        </article>
-                        <article class="home_article swiper-slide">
-                           <img src="./image/home_img3.png" alt="" class="home_shoe">
-                        </article>
-                        
+
+               <!-- If we need pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+      <section class="category">
+         <div class="category-hot container">
+            <div class="box-cat">
+               <div class="box-item">
+                  <article>
+                     <a href=""><img src="./image/banner3.1.webp" alt="" /></a>
+                  </article>
+                  <div class="content">
+                     <h1>Sản Phẩm Mới Ra Mắt</h1>
+                     <a href="" class="btn">Xem Thêm</a>
+                  </div>
+               </div>
+               <div class="box-item">
+                  <article>
+                     <a href=""><img src="./image/banner3.2.webp" alt="" /></a>
+                  </article>
+                  <div class="content">
+                     <h1>Bộ Sưu Tập</h1>
+                     <a href="" class="btn">Xem Thêm</a>
+                  </div>
+               </div>
+               <div class="box-item">
+                  <article>
+                     <a href=""><img src="./image/banner3.3.webp" alt="" /></a>
+                  </article>
+                  <div class="content">
+                     <h1>Sản phẩm bán chạy</h1>
+                     <a href="" class="btn">Xem Thêm</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="banner-v2  container">
+         <div class="banner-group">
+            <div class="banner_box">
+               <div class="banner_item">
+                  <div class="banner_img">
+                     <img src="./image/banner10.1.jpg" class="img-first" alt="" />
+                  </div>
+                  <div class="banner_content">
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+               <div class="banner_item">
+                  <div class="banner_img">
+                     <img src="./image/banner10.2.webp" alt="" />
+                  </div>
+                  <div class="banner_content">
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+               <div class="banner_item">
+                  <div class="banner_img">
+                     <img src="./image/banner10.3.webp" alt="" />
+                  </div>
+                  <div class="banner_content">
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+               <div class="banner_item">
+                  <div class="banner_img">
+                     <img src="./image/banner10.4.webp" alt="" />
+                  </div>
+                  <div class="banner_content">
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+               <div class="banner_item">
+                  <div class="banner_img">
+                     <img src="./image/banner10.5.webp" alt="" />
+                  </div>
+                  <div class="banner_content">
+                     <a href="#">Shop Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =================== Product best seller ==================== -->
+      <div class="cat-seller container">
+         <div class="cat-seller-box-item">
+            <h3 class="title">Best Seller</h3>
+            <span class="sub-title">Sản phẩm bán chạy nhất tuần này!</span>
+            <div class="cat-seller-box relative">
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/4.1.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                      </div>
                   </div>
 
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/2.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/3.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/4.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
                </div>
             </div>
-         </section>
-      </main>
-      <!--=============== MAIN JS ===============-->
-      <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
-      <script src="assets/js/main.js"></script>
+            <div class="cat-seller-box relative">
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/4.1.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/2.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/3.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+               <div class="cat-product-item relative">
+                  <div class="img-product relative">
+                     <a href="#"><img src="./image/product/4.webp" alt="" /></a>
+                     <div class="icon-product">
+                        <div class="add-to-cart">
+                           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <div class="buy-now" id="buy-now">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h4 class="title-product"><a href="#"></a>Workers Club Mens</h4>
+                  <p class="price-product"> <a href="#"></a>1.000.00đ</p>
+               </div>
+            </div>
+         </div>
+         <div id="popup" class="popup">
+            <div class="main-popup">
+               <button id="close-popup">X</button>
+               <div class="product-popup">
+                  <div class="product-media">
+                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </div>   
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                      <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </div>             
+                        </div>
+                      </div>
+                  </div>
+                  <div class="product-title">
+                     <h3>Unisex Stepney Workers</h3>
+                     <p class="popup-price">1.500.000đ</p>
+                     <p class="popup-description">As sneaker culture grows more contagious Stand on a level floor with
+                        your heels against a straight edge or wall Measure your...
+                     </p>
+                     <div class="quantity-container">
+                        <button class="quantity-button" id="decrease">-</button>
+                        <input type="text" class="quantity-input" id="quantity" value="0" readonly>
+                        <button class="quantity-button" id="increase">+</button>
+                    </div>
+                    <div class="contact-product">
+                        <div class="add-to-cart">
+                          <a href=""><i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                        <div class="buy-now">
+                           <a href=""><i class="fa-solid fa-cart-shopping"></i>Mua ngay</a>
+                         </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cat-thuonghieu container">
+         <div class="cat-thuonghieu-box--1">
+            <div class="cat-thuonghieu-item">
+               <a href=""><img src="./image/adidas1.jpg" alt=""></a>
+            </div>
+            <div class="cat-thuonghieu-item">
+               <a href=""><img src="./image/nike2.jpg" alt=""></a>
+            </div>
+         </div>
+         <div class="cat-thuonghieu-box--2">
+            <div class="cat-thuonghieu-item">
+               <a href=""><img src="./image/gucci.png" alt=""></a>
+            </div>
+            <div class="cat-thuonghieu-item">
+               <a href=""><img src="./image/dior.png" alt=""></a>
+            </div>
+            <div class="cat-thuonghieu-item">
+               <a href=""><img src="./image/balenciaga.png" alt=""></a>
+            </div>
+         </div>
+      </div>
       
-   </body>
+   </main>
+   <footer>
+      <div class="top-footer">
+        <div class="contact-footer">
+         <h4>Liên hệ với chúng tôi</h4>
+         <ul class="contact-main">
+            <li><i class="fa-solid fa-phone"></i>0333.421.848</li>
+            <li><i class="fa-brands fa-facebook"></i>0333.421.848</li>
+            <li><i class="fa-solid fa-envelope"></i>nguyenhieploi2001@gmail.com</li>
+            <li><i class="fa-solid fa-map-pin"></i>1201 Phòng Broadway 600</li>
+         </ul>
+        </div>
+        <div class="contact-more">
+         <h4>Về chúng tôi</h4>
+         <ul class="contact-more-main">
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Điều khoản và điều kiện</a></li>
+            <li><a href="">Sản phẩm trả lại</a></li>
+            <li><a href="">Điều khoản sử dụng</a></li>
+         </ul>
+        </div>
+        <div class="contact-sendmail">
+         <h4>Gửi mail cho chúng tôi</h4>
+         <div class="email-container">
+            <span class="email-sub">Hãy là người đầu tiên tìm hiểu về
+               các chương trình khuyến mãi tuyệt vời của chúng tôi!</span>
+            <input type="text" placeholder="Nhập địa chỉ email">
+            <button>Send Mail</button>
+        </div>
+        </div>
+      </div>
+   
+      <div class="menunz">
+         <div class="rmenunz">
+            <div class="rmenunz1"><img src="https://gagiongvietcuong.com/wp-content/uploads/2021/04/nz-goi-ngay.svg"
+                  alt="Gọi ngay" /></div>
+            <div class="rmenunz2"><a href="tel:0888630360">Gọi ngay <i class="fa fa-phone"></i> 0333.421.848</a></div>
+         </div>
+         <div class="rmenunz">
+            <div class="rmenunz1"><img src="https://gagiongvietcuong.com/wp-content/uploads/2021/04/nz-zalo-48-tron.png"
+                  alt="" width="48" height="48" style="border: 1px solid #1da3e2;border-radius: 100%;" /></div>
+            <div class="rmenunz2"><a href="https://zalo.me/0888630360">Liên hệ Zalo <i class="fa fa-comments"></i>
+                  0333.421.848</a></div>
+         </div>
+      </div>
+
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   </footer>
+   <!--=============== MAIN JS ===============-->
+   <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

@@ -36,3 +36,61 @@ let swiperShoes = new Swiper('.home_swiper', {
       clickable: true,
     },
   });
+
+
+/* =================================== MUA NGAY ===================*/
+  // JavaScript để hiển thị popup khi click vào "buy-now"
+  // JavaScript để hiển thị popup và overlay
+  const buyNowButtons = document.querySelectorAll('.buy-now'); // Lấy tất cả các nút "buy-now"
+
+  const popup = document.getElementById('popup');
+  const closePopupButton = document.getElementById('close-popup');
+  
+
+  // Lặp qua tất cả các nút "buy-now" và thêm sự kiện click
+  buyNowButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+          popup.style.display = 'block';
+       
+      });
+  });
+
+  closePopupButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+     
+  });
+
+// =================================== POPUP SLIDER ẢNH PRODUCT ================
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+//============================= Tính năng quantity =======================
+const decreaseButton = document.getElementById('decrease');
+        const increaseButton = document.getElementById('increase');
+        const quantityInput = document.getElementById('quantity');
+
+        decreaseButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 0) {
+                quantityInput.value = (currentValue - 1).toString();
+            }
+        });
+
+        increaseButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = (currentValue + 1).toString();
+        });
