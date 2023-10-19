@@ -404,7 +404,7 @@ a {
   padding: 10px 50px;
   border: none;
   color: white;
-  
+  border-radius: 30px;
   font-size: 13px;
   font-weight: 600;
   background: #080808;
@@ -475,6 +475,7 @@ a {
   object-fit: cover;
   flex-shrink: 0;
   height: 385px;
+  border-radius: 30px;
 }
 .banner_box .item-1{
   height: 100%  !important;
@@ -485,7 +486,7 @@ a {
   position: relative;
 }
 .banner-v2{
-  margin-top: 100px !important;
+  margin-top: 70px !important;
 }
 /* =============================== Best seller ================================ */
 .cat-product-item{
@@ -939,6 +940,7 @@ footer{
 .cat-thuonghieu-item img{
   width: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
 .cat-thuonghieu-box--1{
   display: flex;
