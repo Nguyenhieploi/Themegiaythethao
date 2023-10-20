@@ -94,3 +94,13 @@ const decreaseButton = document.getElementById('decrease');
             let currentValue = parseInt(quantityInput.value);
             quantityInput.value = (currentValue + 1).toString();
         });
+
+// ============================== blog =======================
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
